@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const url = "http://www.aspxfans.com:8080/news/index.asp?name=张三&ID=24618&page=1#name"  
+    function getValue(key){
+      const index = url.getIndexOf(key)
+      if(index === -1){
+        return 
+      }else{
+        console.log(index)
+      }
+    }
+    getValue(name)
+  </script>
+</body>
+</html>
