@@ -23,7 +23,7 @@
 var maxSubArray = function (nums) {
   // 用来存放每次遍历求得的 连续子数组的最大和
   const memo = []
-  // 当数组只有一个元素时，最大字串就是这个元素
+  // 当数组只有一个元素时，最大字串就是这个元素，最大和也是这个元素
   memo[0] = nums[0]
   // 假设最大值
   let max = nums[0]
